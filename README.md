@@ -6,5 +6,7 @@ To define the input files it can be used the variable ```params.input```. The ou
 
 Docker/Singularity is "needed" to reproduce an enviroment with all the software running without problem. It should be possible to run without it if tcoffee and 3rd party software is properly installed. A "internal" variabe ```dynamicDirectory``` is defined to decide which ```dynamic.pl``` script run (from the repository or the one from docker)
 
+To run the pipeline you can run:
+```nextflow run main.nf -profile docker```
 
-
+```nextflow run main.nf --input '/Users/edgargarriga/CBCRG/tc_inside_nf/data/*.fa' --outdir '/Users/edgargarriga/CBCRG/tc_inside_nf/results' --flags '-method famsa_msa' -profile docker```
