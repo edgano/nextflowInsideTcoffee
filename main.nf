@@ -36,6 +36,10 @@ params.outdir="$baseDir/results/"
 
 params.flags="-method famsa_msa"
 
+// nextflow run main.nf -input /Users/edgargarriga/CBCRG/tc_inside_nf/data/* -outdir /Users/edgargarriga/CBCRG/tc_inside_nf/results -flags "-method famsa_msa" -profile docker
+// nextflow run main.nf -profile docker
+
+//decide if we want to use /bin script or the one from docker
 dynamicDirectory="/tcoffee/t_coffee/src/"
 //dynamicDirectory="$baseDir/bin/"
 
